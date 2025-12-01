@@ -3,15 +3,31 @@
   --color-hdr-text: #1f314f;
   --color-pg-text: #68778d;
   --color-qr-bg: #ffffff;
+  --box-shadow-light: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
 }
 
+@media (min-width: 376px) {
+  .card {
+    width: 400px;
+    padding: 32px;
+  }
+    .qr-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .qr-box img {
+    width: 300px;
+    height: 300px;
+  }
+}
 @media (max-width: 375px) {
   .card {
     width: 90%;
     padding: 16px;
   }
-
-  .qr-box {
+    .qr-box {
     height: auto;
     width: 100%;
   }
@@ -21,6 +37,7 @@
     height: auto;
   }
 }
+
 
 body {
   margin: 0;
@@ -42,8 +59,9 @@ body {
 .card {
   background-color: var(--color-qr-bg);
   border-radius: 20px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  width: 288px;
+  box-shadow: var(--box-shadow-light);
+  width: 90%;
+  max-width: 288px;
   height: auto;
   padding: 16px;
   display: flex;
@@ -53,8 +71,9 @@ body {
 }
 
 .qr-box img {
-  width: 288px;
-  height: 288px;
+  width: 100%;
+  max-width: 288px;
+  height: auto;
   object-fit: contain;
   border-radius: 10px;
 
