@@ -17,7 +17,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](![qr-code](image.png))
+![qr-code](/images/image.png)
 
 ### Links
 
